@@ -16,7 +16,7 @@ permalink: /blog/
   <div class='focus4'>
     <a href="/">&#x25CF;</a>
     <a href="/about/">About</a>
-    <a href="/projects/">Projects</a>
+    <a href="/project/">Projects</a>
     <a href="/blog/">Blogs</a>
   </div>
 </r-cell>

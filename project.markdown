@@ -1,6 +1,6 @@
 ---
 layout: default
-color_: project
+color_: projects
 title: Project
 permalink: /project/
 ---
@@ -15,7 +15,7 @@ permalink: /project/
   <div class='focus2'>
     <a href="/">&#x25CF;</a>
     <a href="/about/">About</a>
-    <a href="/projects/">Projects</a>
+    <a href="/project/">Projects</a>
     <a href="/blog/">Blogs</a>
   </div>
 </r-cell>
