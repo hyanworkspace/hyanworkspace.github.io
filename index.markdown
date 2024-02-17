@@ -1,6 +1,7 @@
 ---
 title: Home
-layout: index
+layout: default
+color_: home
 ---
 
 <r-grid class="main" columns=6 columns-s=4 columns-xs=2>

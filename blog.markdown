@@ -1,5 +1,6 @@
 ---
-layout: blog
+layout: default
+color_: blog
 title: Blog
 permalink: /blog/
 ---

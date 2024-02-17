@@ -1,5 +1,6 @@
 ---
-layout: about
+layout: default
+color_: about
 title: About
 permalink: /about/
 ---
@@ -36,13 +37,12 @@ Interested in learning more about my work?<br />
 
 
 </r-cell>
-<!--  -->
-<r-cell class="bio" order-xs="-1" span=5-6 span-s=3-4 span-xs=row>
-  <!-- <img src="portrait.jpg" alt="Portrait of me"> -->
-  <p class="link-list">
-    <a href="https://github.com/hyanworkspace">GitHub /rsms</a>
-    <a href="/cdn-cgi/l/email-protection#611300120c14122113120c124f0c04">Email <span class="__cf_email__" data-cfemail="aedccfddc3dbddeedcddc3dd80c3cb">[email&#160;protected]</span></a>
-  </p>
+
+<r-cell order-xs="-1" span=5-6 span-s=3-4 span-xs=row>
+<p class="link-list">
+  <a href="https://github.com/hyanworkspace">GitHub / @hyanworkspace</a>
+  <a href="/cdn-cgi/l/email-protection#611300120c14122113120c124f0c04">Email <span class="__cf_email__" data-cfemail="aedccfddc3dbddeedcddc3dd80c3cb">[email&#160;protected]</span></a>
+</p>
 </r-cell>
 
 <r-cell class="tidbit" span=2 span-xs=row>
