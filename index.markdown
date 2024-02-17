@@ -11,7 +11,7 @@ layout: index
 
 <r-cell order="-9" class="menu" span=2 span-s=2>
     <div class='focus0'>
-    <a href="/index/">&#x25CF;</a>
+    <a href="/">&#x25CF;</a>
     <a href="/about/">About</a>
     <a href="/projects/">Projects</a>
     <a href="/blog/">Blogs</a>
@@ -21,9 +21,10 @@ layout: index
 <r-cell span=2>
 <h2 class="margin-b-4"><a href="/projects/">Projects</a></h2>
 
-    <h3><a href="/vitiv/">VITIV</a></h3>
-    <p>A Python-Flask based web application for a human-machine interaction based on video, image and text.
-    </p>
+<h3><a href="/vitiv/">VITIV</a></h3>
+<p>A Python-Flask based web application for a human-machine interaction based on video, image and text.
+</p>
+
 <h3><a href="/projects/" class="dimmed">See all projects &rarr;</a></h3>
 </r-cell>
 
