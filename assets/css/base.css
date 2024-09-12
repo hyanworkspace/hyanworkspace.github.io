@@ -2728,8 +2728,16 @@ r-grid.main.simple h1 {
     color: #333; /* 深灰色文字 */
 }
 
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+}
+
 .menu {
-    position: sticky;
-    top: 20px; /* 调整顶部距离 */
-    text-align: right; /* 右对齐菜单项 */
-  }
+    width: 200px; /* 调整菜单宽度 */
+    margin-left: 20px; /* 与内容的间距 */
+}
