@@ -48,7 +48,8 @@ color_: home
 <r-cell class="intro" order-s="-2" order-xs="-2" span=2 span-s=3 span-xs=row>
     <p>
     Hey, this is H.Yan. <br>
-    Researcher, Engineer, Quant, a curious human being<br>
+    Researcher, Engineer, Quant<br> 
+    a curious human being<br>
     based in Shanghai, China, educated in France<br>
     </p>
     <!-- <div class="quick-links">
