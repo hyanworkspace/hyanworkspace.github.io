@@ -19,6 +19,7 @@ color_: home
     </div>
 </r-cell>
 
+<!-- grid -->
 <r-cell span=2>
 <h2 class="margin-b-4"><a href="/project/">Projects</a></h2>
 
