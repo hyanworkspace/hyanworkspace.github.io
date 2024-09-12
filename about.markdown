@@ -22,9 +22,11 @@ permalink: /about/
 
 <r-cell span=3 span-s=2 span-xs=row class="intro">
 
-<p>Hi, I'm Hui Yan. Neutrois.<br>
-    Research engineer &amp; Quant, living in Shanghai, China.</p>
-<p>你好，我是H.Yan。我是一名工程师/量化研究员。</p>
+<p> 
+Hey, this is H.Yan. <br>
+Researcher, Engineer, Quant, a curious human being<br>
+based in Shanghai, China, educated in France<br>
+</p>
 
 <p>I find it very hard to describe what kind of topics I'm interested in, but I'm always looking for new ideas and projects to work on, so feel free to reach out if you want to collaborate.<br />
 <a href="/project/">List of projects →</a></p>

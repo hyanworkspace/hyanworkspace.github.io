@@ -7,7 +7,7 @@ color_: home
 <r-grid class="main" columns=6 columns-s=4 columns-xs=2>
 
 <r-cell order="-10" span=4 span-s=2>
-    <h1>H.Yan</h1>
+    <h1>H.Yan's homepage</h1>
 </r-cell>
 
 <r-cell order="-9" class="menu" span=2 span-s=2>
@@ -27,11 +27,6 @@ color_: home
 </p>
 
 <h3><a href="/project/" class="dimmed">See all projects &rarr;</a></h3>
-</r-cell>
-
-<r-cell order-s="-1" order-xs="-1" span=2>
-    <h2 class="margin-b-4"><a href="/blog/">Blogs</a></h2>
-
 </r-cell>
 
 <r-cell span=2>
@@ -54,7 +49,7 @@ color_: home
     <p>
     Hey, this is H.Yan. <br>
     Researcher, Engineer, Quant, a curious human being<br>
-    base in Shanghai, China, educated in France<br>
+    based in Shanghai, China, educated in France<br>
     </p>
     <!-- <div class="quick-links">
     <a href="https:/">
