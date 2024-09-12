@@ -34,12 +34,27 @@ color_: home
 
 </r-cell>
 
+<r-cell span=2>
+<h2 class="margin-b-4"><a href="/blog/">Latest posts</a></h2>
+
+<ul>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<h3><a href="/blog/" class="dimmed">See all blog posts &rarr;</a></h3>
+</r-cell>
+
 <r-cell class="intro" order-s="-2" order-xs="-2" span=2 span-s=3 span-xs=row>
     <p>
-    Hey, I'm H.Yan. <br>
-    a Research engineer, <br> 
-    a Quant,<br>
-    currently living in Shanghai, China.<br>
+    Hey, this is H.Yan. <br>
+    Researcher, Engineer, Quant, a curious human being<br>
+    base in Shanghai, China, educated in France<br>
     </p>
     <!-- <div class="quick-links">
     <a href="https:/">
