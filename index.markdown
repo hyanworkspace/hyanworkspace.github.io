@@ -45,23 +45,19 @@ color_: home
 <h3><a href="/blog/" class="dimmed">See all blog posts &rarr;</a></h3>
 </r-cell>
 
+
 <r-cell class="intro" order-s="-2" order-xs="-2" span=2 span-s=3 span-xs=row>
-    <p>
-    Hey, this is H.Yan. <br>
-    <br>
-    Researcher, Engineer, Quant<br> 
-    a curious human being<br>
-    <br>
-    based in Shanghai, China<br> 
-    educated in France<br>
-    </p>
-    <!-- <div class="quick-links">
-    <a href="https:/">
-        AaBbCc123<br>
-        The Inter typeface family &rarr;
-    </a>
-    <a href="https://shop./">Buy a nice poster &rarr;</a>
-    </div> -->
+    <div class="intro-content">
+        <p>
+        Hey, this is H.Yan. <br>
+        <br>
+        Researcher, Engineer, Quant<br> 
+        a curious human being<br>
+        <br>
+        based in Shanghai, China<br> 
+        educated in France<br>
+        </p>
+    </div>
 </r-cell>
 
 </r-grid>
