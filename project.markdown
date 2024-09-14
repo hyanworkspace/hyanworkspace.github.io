@@ -21,9 +21,9 @@ permalink: /project/
 </r-cell>
 
 <!-- grid -->
-<r-cell class="project" span=2>
-  <h3><a href="/vitiv/">VITIV</a></h3>
-  <p>A Python-Flask based web application for a human-machine interaction based on video, image and text.</p>
+<r-cell class="project" span=4>
+  <h3><a href="/projects/vitiv/">VITIV</a></h3>
+  <p></p>
 </r-cell>
 
 </r-grid>

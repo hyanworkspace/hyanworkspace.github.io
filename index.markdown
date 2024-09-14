@@ -20,7 +20,7 @@ color_: home
 </r-cell>
 
 <!-- grid -->
-<r-cell span=6>
+<r-cell span=4>
 <h2 class="margin-b-4"><a href="/project/">Projects</a></h2>
 
 <h3><a href="/vitiv/">VITIV</a></h3>
@@ -30,7 +30,7 @@ color_: home
 <h3><a href="/project/" class="dimmed">See all projects &rarr;</a></h3>
 </r-cell>
 
-<r-cell span=6>
+<r-cell span=4>
 <h2 class="margin-b-4"><a href="/blog/">Latest posts</a></h2>
 
 <ul>

@@ -1,0 +1,139 @@
+---
+layout: project
+title: "VITIV"
+date: 2023-11-20
+categories: projects
+permalink: /projects/vitiv/
+---
+
+# 解构视觉感知的界限：在视觉、智能与现实的交界处探索
+VITIV 是与cecilia（https://ceciliahua.com）的一个合作项⽬，它不仅仅是一个尝试将技术和艺术创作相融合的作品，更是为了反射出我们对视觉、智能和现实本质的种种疑问。在这个快速发展的人工智能时代，我们想要让 VITIV 为我们提供一个独特的视角，去审视我们与技术、与世界的关系。
+
+## 项目的诞生
+VITIV 的诞生起源于一次中国美术学院网络社会研究所发起的[AIathon艺能松](https://www.caa-ins.org/archives/11595)，一个简易的⽹⻚应⽤程序(web app)。两名共创者的背景完全不同，当时我们可能都没有意识到这个想法会发展成什么样子。但回过头来看，在这个视觉信息爆炸、人工智能迅速发展的时代，VITIV的出现是由于我们都在寻找一种方式，去理解和表达人类与机器如何共同"看"这个世界。
+
+这个项目的核心是Video-Image-Text-Image-Video (VITIV) 模型，它的名字本身就反映了我们的核心理念：视觉信息在不同形式间的转换与循环。这个过程不仅仅是技术上的实现，更是对人类认知过程的一种模拟和探索。当我们每个人在看/观察这个世界时，影像作为一种由人眼和脑共同捕捉形成的，对环境与自身的测量和捕捉，与我们的内部认知与感受不断循环交互的过程，是否就是在不断地将视觉信息转化为认知（或者说，内心的语言），再将认知与时刻变化的世界的影像进行对比和解读？
+
+
+## 技术实现
+
+在技术层面，初版的 VITIV 实现中我们主要使用了[CogVLM](https://github.com/THUDM/CogVLM)和[Runway Gen-2](https://runwayml.com/research/gen-2)等开源模型。这些工具让VITIV能够从图像和 prompt 生成回答，再从该文本生成图像和视频。但必须承认的是，最初的技术实现还远远不够。每一次系统的输出，都会让人有双向的惊叹，一方面惊讶于人工智能模型的能力，但同时也让我们意识到它的局限性。
+
+我们认为这种不完美恰恰是VITIV最有趣的地方。这一份不完美正提醒了我们，无论是人类还是机器，我们的认知都是有局限的，带有“主观”的偏差。当我们观察VITIV如何"理解"和"描述"世界时，我们实际上也在反思我们自己的认知过程。这种反思引发了一系列深刻的哲学问题：什么是真实的视觉体验？我们如何确定自己看到的就是"真实"的？机器的"视角"是否能帮助我们突破人类视觉的局限？
+
+## 交互：对话中的自我发现
+
+VITIV的一个关键特征是它的交互性。通过实时摄像头，系统捕捉现实世界的图像，邀请观众与之对话。这个过程中，有趣的事情经常发生。有时，VITIV会"看到"我们没注意到的细节；有时，它的理解又会出人意料地偏离我们的预期。
+
+这种人机对话不仅仅是关于技术的展示，更是一种自我探索的过程。当我们询问VITIV"你看到了什么"时，我们实际上也在问自己："我们是如何看世界的？我们的视觉体验有多少是由我们的预期和经验塑造的？"这种对话挑战了我们对"客观现实"的理解，提醒我们每个人的视角都是独特的，包括机器的视角。
+
+## 时空的重构：预测与多元现实
+
+VITIV的另一个特性是它的"预测"能力。系统不仅能解读当前的视觉输入，当被问到有关“下一刻”，它还能基于这些输入生成"未来"的视觉内容。这个功能最初只是一个技术实验，但它很快引发了我们对时间和现实本质的深入思考。
+
+当VITIV"预测"未来时，它实际上是基于已知信息构建了一个可能的情景。就像人类总是基于当前的认知和经验去想象和构建未来。VITIV的预测功能，某种程度上是对人类思维这一特性的模拟和放大。更进一步，我们开始尝试部署多个VITIV智能体，每个都可能代表不同的时间点或不同的解释视角。这种设置挑战了线性时间和单一现实的概念。它让我们思考：是否存在一个客观的、统一的现实？还是说，现实本身就是多元的、主观的构建？
+
+## 伦理与反思：AI时代的镜像
+
+在开发VITIV的过程中，我们越来越意识到这个项目不仅仅是关于技术或艺术创作的融合，它也深深触及了AI伦理的问题。VITIV使用的模型和数据集不可避免地带有其创建者的文化背景和偏见。当我们观察 VITIV 如何"看"这个世界时，我们实际上也在观察这些偏见如何影响机器的认知。
+
+这引发了一系列深刻的问题：我们如何确保AI系统的公平性和包容性？在依赖AI系统进行决策的未来，我们如何防止这些偏见被放大和固化？VITIV提醒我们，技术永远不是中立的。作为创造者，我们有责任不断反思和质疑我们的创造物，以及它们对社会的影响。
+
+## 创作范式的转变：人机协作的新可能
+
+通过VITIV，我们看到了一种新的艺术创作范式正在形成。在这个范式中，艺术家不再是唯一的创作者，而是成为了人机协作过程的设计者和引导者。这种转变挑战了我们对创造力和原创性的传统理解。
+
+我们开始问自己：当一件艺术品部分由AI生成时，谁是真正的创作者？创造力的本质是什么？是否存在纯粹的人类创造力，还是说我们的创造力一直都是与外部世界、与工具的互动中产生的？
+
+这些问题没有简单的答案，但VITIV为我们提供了一个独特的平台来探索这些问题。通过观察和参与VITIV的创作过程，我们不仅在创造作品，也在重新定义创作的本质。
+
+## 观众角色的重塑
+
+VITIV项目中，观众的角色发生了根本的变化。他们不再是被动的接受者，而是成为了作品形成过程的参与者。在每一次的“看”与“被看”，都是一次独特的创作过程。
+
+这种参与式的艺术体验引发了我们对艺术本质的新思考：艺术是否仅存在于创作者的表达中，还是说它更多地存在于创作者、作品和观众的互动中？在AI时代，当机器可以生成令人惊叹的图像和视频时，人类参与的意义何在？
+
+我们认为，VITIV 展示了一种可能性：在未来的艺术创作中，人类的角色可能更多地转向提出问题、引导对话和解释意义。艺术不再是单向的表达，而是成为了一种集体探索和对话的过程。
+
+## 跨学科的启示：超越边界
+
+虽然 VITIV 最初是作为一个艺术项目而诞生的，但我们逐渐意识到它触及的话题不止于此，心理学、认知科学、哲学等多个领域都可以提出与之相关的有趣的研究视角。
+
+例如，通过观察VITIV如何"理解"和"描述"视觉信息，我们可能对人类视觉认知过程有新的洞察。它的预测功能可能为我们研究人类如何构建对未来的预期提供线索。多智能体系统的设置则可能帮助我们理解群体认知和决策的动态过程。
+
+这些跨学科的启示提醒我们，或许学科之间的界限正在变得越来越模糊。VITIV可能会在未来带领我们去探索，看到更多的项目，它们不仅跨越艺术和技术的界限，还将融合多个学科的洞见，为我们理解智能、意识和现实提供新的视角。
+
+## 未完待续：开放性与未来展望
+
+我们深知这个项目还远未完成。事实上，我们也怀疑它是否有一个最终的"完成"状态。我们希望它“活着”，或者更像是一个不断演化的生态系统，随着技术的进步和我们理解的深入而不断发展。
+
+首先，我们希望能够整合更先进的AI模型，探索更复杂的交互模式，甚至尝试跨感官的艺术创作。我们也在思考如何将VITIV的理念应用到某些具体的话题，比如一些社会问题的观察。但无论 VITIV 未来如何发展，我们的目标不是创造一个完美的AI系统，而是通过这个项目促进人与机器、人与人、人与世界之间更深入的对话和理解。
+
+VITIV是我们对AI时代的一次快速探索和反思。它不仅仅是一个技术产品或艺术品，更是一面镜子，反射出我们对视觉、智能、现实和人性的种种疑问。
+
+
+# Deconstructing the boundaries of visual perception: exploring the intersection of Vision, Intelligence, and Reality
+
+VITIV is a collaborative project with cecilia (https://ceciliahua.com). It's not just an attempt to merge technology and artistic creation, but also a reflection of our questions about the nature of vision, intelligence, and reality. In this rapidly developing era of artificial intelligence, we want VITIV to provide us with a unique perspective to examine our relationship with technology and the world.
+
+## The start of the project
+
+VITIV originated from an [AIathon](https://www.caa-ins.org/archives/11595) initiated by the Institute of Network Society at China Academy of Art, starting as a simple web application. The two co-creators come from completely different backgrounds, and at the time, we might not have realized how this idea would develop. But looking back, in this era of visual information explosion and rapid AI development, VITIV emerged because we were both seeking a way to understand and express how humans and machines "see" the world together.
+
+The core of this project is the Video-Image-Text-Image-Video (VITIV) model, its name reflecting our core idea: the conversion and circulation of visual information between different forms. This process is not just a technical implementation, but a simulation and exploration of the human cognitive process. When each of us looks at/observes this world, isn't the process of image - as a measurement and capture of the environment and self formed jointly by human eyes and brain - constantly interacting with our internal cognition and feelings, constantly transforming visual information into cognition (or inner language), and then comparing and interpreting this cognition with the ever-changing images of the world?
+
+## Technical implementation
+
+At the technical level, in the initial implementation of VITIV, we mainly used open-source models such as [CogVLM](https://github.com/THUDM/CogVLM) and [Runway Gen-2](https://runwayml.com/research/gen-2). These tools allow VITIV to generate responses from images and prompts, and then generate images and videos from that text. But we must admit that the initial technical implementation was far from enough. Each output of the system would evoke a two-way amazement, on one hand surprised by the capabilities of the AI models, but also making us aware of their limitations.
+
+We believe that this imperfection is precisely what makes VITIV most interesting. This imperfection reminds us that whether human or machine, our cognition is limited and carries "subjective" biases. When we observe how VITIV "understands" and "describes" the world, we are actually reflecting on our own cognitive processes. This reflection raises a series of profound philosophical questions: What is a true visual experience? How do we determine that what we see is "real"? Can the machine's "perspective" help us break through the limitations of human vision?
+
+## Interaction: self-discovery in dialogue
+
+A key feature of VITIV is its interactivity. Through a real-time camera, the system captures images of the real world, inviting the audience to engage in dialogue. Interesting things often happen in this process. Sometimes, VITIV "sees" details we haven't noticed; sometimes, its understanding unexpectedly deviates from our expectations.
+
+This human-machine dialogue is not just a demonstration of technology, but a process of self-exploration. When we ask VITIV "what do you see," we are actually asking ourselves: "How do we see the world? How much of our visual experience is shaped by our expectations and experiences?" This dialogue challenges our understanding of "objective reality," reminding us that everyone's perspective is unique, including the machine's perspective.
+
+## Reconstruction of time and space: prediction and parallel realities
+
+Another feature of VITIV is its "predictive" ability. The system can not only interpret current visual inputs, but when asked about "the next moment," it can also generate "future" visual content based on these inputs. This function was initially just a technical experiment, but it quickly led to our deep thinking about the nature of time and reality.
+
+When VITIV "predicts" the future, it is actually constructing a possible scenario based on known information. Just like humans always imagine and construct the future based on current cognition and experience. VITIV's predictive function is, to some extent, a simulation and amplification of this characteristic of human thinking. Going further, we began to try deploying multiple VITIV agents, each potentially representing different time points or different interpretative perspectives. This setup challenges the concept of linear time and singular reality. It makes us consider: Is there an objective, unified reality? Or is reality itself a plural, subjective construct?
+
+## Ethics: a mirror of the AI
+
+In the process of developing VITIV, we became increasingly aware that this project is not just about the fusion of technology and artistic creation, but also deeply touches on AI ethics issues. The models and datasets used by VITIV inevitably carry the cultural background and biases of their creators. When we observe how VITIV "sees" the world, we are actually observing how these biases affect machine cognition.
+
+This raises a series of profound questions: How do we ensure the fairness and inclusivity of AI systems? In a future that relies on AI systems for decision-making, how do we prevent these biases from being amplified and solidified? VITIV reminds us that technology is never neutral. As creators, we have a responsibility to constantly reflect on and question our creations and their impact on society.
+
+## The transformation of creative paradigms: Human-Machine collaboration
+
+Through VITIV, we see a new paradigm of artistic creation taking shape. In this paradigm, the artist is no longer the sole creator, but becomes the designer and guide of the human-machine collaboration process. This shift challenges our traditional understanding of creativity and originality.
+
+We begin to ask ourselves: When a work of art is partly generated by AI, who is the true creator? What is the essence of creativity? Is there such a thing as pure human creativity, or has our creativity always been produced in interaction with the external world and tools?
+
+These questions have no simple answers, but VITIV provides us with a unique platform to explore these issues. By observing and participating in VITIV's creative process, we are not only creating works, but also redefining the nature of creation.
+
+## Reshaping the role of the audience: from passive reception to active participation
+
+In the VITIV project, the role of the audience has fundamentally changed. They are no longer passive receivers, but become participants in the formation process of the work. In each act of "seeing" and "being seen," there is a unique creative process.
+
+This participatory art experience raises new thoughts about the nature of art: Does art exist solely in the expression of the creator, or does it exist more in the interaction between creator, work, and audience? In the AI era, when machines can generate amazing images and videos, what is the significance of human participation?
+
+We believe that VITIV demonstrates a possibility: in future artistic creation, the human role may shift more towards asking questions, guiding dialogue, and interpreting meaning. Art is no longer a one-way expression, but becomes a process of collective exploration and dialogue.
+
+## Interdisciplinary insights: beyond the boundaries
+
+Although VITIV was initially born as an art project, we gradually realized that the topics it touches upon go beyond this, with interesting research perspectives that can be proposed in many fields such as psychology, cognitive science, and philosophy.
+
+For example, by observing how VITIV "understands" and "describes" visual information, we may gain new insights into human visual cognitive processes. Its predictive function may provide clues for our study of how humans construct expectations of the future. The setup of multi-agent systems may help us understand the dynamic processes of group cognition and decision-making.
+
+These interdisciplinary insights remind us that perhaps the boundaries between disciplines are becoming increasingly blurred. VITIV may lead us to explore and see more projects in the future that not only cross the boundaries of art and technology, but also integrate insights from multiple disciplines, providing us with new perspectives for understanding intelligence, consciousness, and reality.
+
+## To be continued: openness and future prospects
+
+We are deeply aware that this project is far from complete. In fact, we also wonder if it has a final "completed" state. We hope it "lives," or is more like a constantly evolving ecosystem, continuously developing with the advancement of technology and our deepening understanding.
+
+First, we hope to integrate more advanced AI models, explore more complex interaction modes, and even attempt cross-sensory artistic creation. We are also thinking about how to apply VITIV's concepts to some specific topics, such as observing certain social issues. But no matter how VITIV develops in the future, our goal is not to create a perfect AI system, but to promote deeper dialogue and understanding between humans and machines, humans and humans, and humans and the world through this project.
+
+VITIV is our rapid exploration and reflection on the AI era. It is not just a technological product or work of art, but a mirror, reflecting our various questions about vision, intelligence, reality, and human nature.
