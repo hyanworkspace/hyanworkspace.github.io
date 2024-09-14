@@ -7,6 +7,11 @@ categories: projects
 permalink: /projects/vitiv/
 ---
 
+<div id="toc_container">
+  <p class="toc_title">Summary</p>
+  <ul id="toc_list"></ul>
+</div>
+
 # 解构视觉感知的界限：在视觉、智能与现实的交界处探索
 VITIV 是与cecilia（https://ceciliahua.com）的一个合作项⽬，它不仅仅是一个尝试将技术和艺术创作相融合的作品，更是为了反射出我们对视觉、智能和现实本质的种种疑问。在这个快速发展的人工智能时代，我们想要让 VITIV 为我们提供一个独特的视角，去审视我们与技术、与世界的关系。
 
@@ -138,3 +143,27 @@ We are deeply aware that this project is far from complete. In fact, we also won
 First, we hope to integrate more advanced AI models, explore more complex interaction modes, and even attempt cross-sensory artistic creation. We are also thinking about how to apply VITIV's concepts to some specific topics, such as observing certain social issues. But no matter how VITIV develops in the future, our goal is not to create a perfect AI system, but to promote deeper dialogue and understanding between humans and machines, humans and humans, and humans and the world through this project.
 
 VITIV is our rapid exploration and reflection on the AI era. It is not just a technological product or work of art, but a mirror, reflecting our various questions about vision, intelligence, reality, and human nature.
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  var tocList = document.getElementById('toc_list');
+
+  headings.forEach(function(heading, index) {
+    var anchor = 'toc-' + index;
+    heading.id = anchor;
+
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + anchor;
+    a.textContent = heading.textContent;
+    li.appendChild(a);
+
+    // 根据标题级别添加缩进
+    li.style.marginLeft = (heading.tagName[1] - 1) * 20 + 'px';
+
+    tocList.appendChild(li);
+  });
+});
+</script>
