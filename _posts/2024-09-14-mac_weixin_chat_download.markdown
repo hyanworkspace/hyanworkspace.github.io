@@ -5,7 +5,7 @@ date:   2024-09-14
 # categories: [分类1, 分类2]
 tags: ["AI", "local_first", "dev"]
 ---
-
+# 起因
 Windows系统下要实现这件事很容易，已经有开源的非常好用的工具**MemoTrace**了，传送门在这里：[github](https://github.com/LC044/WeChatMsg)，和[主页](https://memotrace.cn)。
 
 其实 MacOS上 的微信是提供聊天数据迁移的，但是！事实上，我们作为个人用户，想要把聊天记录导出成其他形式（简单可读的 txt 比如说），放在其他地方，原始 app 是做不到这一点的。那就更不用提需要把聊天记录提取出来再做一些数据分析或者自己的小工具之类的了。
@@ -21,11 +21,12 @@ Windows系统下要实现这件事很容易，已经有开源的非常好用的�
    1. 使用 Wine（最轻量的解决方案）：Wine 是一个兼容层，允许你在 MacOS 上直接运行某些 Windows 程序，而无需安装完整的 Windows 操作系统。它不需要虚拟机，因此是最节省空间的选项。
    2. 如果 Wine 不支持需要运行的exe，那么运行虚拟机，推荐了免费开源的VirtualBox。
    但是由于自己的 Macbook Air 实在小😭，不想为了一个任务浪费空间，转战第三个方案：**自己破译 MacOS 上的微信数据**。
-3. 
+
+下面奉上 decrypt 方法😛。
 
 # 操作指南
 
-## 聊天记录位置
+## 找到聊天记录位置
 首先，我们需要知道Mac上微信的聊天记录是以数据库的形式保存的，先找到：
 ```shell
 ~/Library/Containers/com.tencent.xinWeChat/Data/Library/Application\ Support/com.tencent.xinWeChat/2.0b4.0.9/
@@ -36,7 +37,7 @@ Windows系统下要实现这件事很容易，已经有开源的非常好用的�
 ```shell
 csrutil status
 ```
-如果为enabled，则需要关闭。如果为disabled则跳过*关闭 SIP*步骤。
+如果为enabled，则需要关闭。如果为disabled则跳过下一个*关闭 SIP*的步骤。
 
 
 ## 关闭 SIP
@@ -117,8 +118,8 @@ csrutil disable
     一个简单的Python脚本示例：
     ```python
     import json
-    chat_file = 'Chat_xxxxx.json'
-    output_file = 'chat_result.txt'
+    chat_file = 'Chat_xxxxx.json' # 作为输入的json文件
+    output_file = 'chat_result.txt' # 假设输出一个 txt
     with open(output_file, "w") as fout:
         with open(chat_file, "r") as fin:
             results = json.load(fin)
@@ -161,20 +162,20 @@ csrutil disable
     pip install pysqlcipher3
     ```
     成功安装后，一个简单的Python脚本示例：
-    ```python
+    ``` python
     import pysqlcipher3.dbapi2 as sqlite
 
-    key = '0x********************'
-    chat_table = 'Chat_***********'
+    raw_key = '0x********************' # 密码，注意保护隐私
+    chat_table = 'Chat_***********' # 表名
 
-    db= sqlite.connect('WeChatDB/msg_1.db')
+    db= sqlite.connect('path_to_Message_directory/msg_*.db')
     db_cursor = db.cursor()
-    db_cursor.execute(f"PRAGMA key='x''{key[2:]}''';")  
-    db_cursor.execute("PRAGMA cipher_compatibility=3;")
-    db_cursor.execute("PRAGMA cipher_page_size=1024;")
-    db_cursor.execute("PRAGMA kdf_iter=64000;")
-    db_cursor.execute("PRAGMA cipher_hmac_algorithm=HMAC_SHA1;")
-    db_cursor.execute("PRAGMA cipher_kdf_algorithm=PBKDF2_HMAC_SHA1;")
+    db_cursor.execute(f"PRAGMA key='x''{raw_key[2:]}''';")  # 设置解密密钥
+    db_cursor.execute("PRAGMA cipher_compatibility=3;")  # 设置兼容性模式
+    db_cursor.execute("PRAGMA cipher_page_size=1024;")  # 设置页面大小
+    db_cursor.execute("PRAGMA kdf_iter=64000;")  # 设置密钥导出函数迭代次数
+    db_cursor.execute("PRAGMA cipher_hmac_algorithm=HMAC_SHA1;")  # 设置HMAC算法
+    db_cursor.execute("PRAGMA cipher_kdf_algorithm=PBKDF2_HMAC_SHA1;")  # 设置KDF算法
 
 
     resoverall = db_cursor.execute(f"SELECT * FROM {chat_table};")
