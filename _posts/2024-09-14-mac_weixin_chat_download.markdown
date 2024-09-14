@@ -6,14 +6,12 @@ date:   2024-09-14
 tags: ["AI", "local_first", "dev"]
 ---
 
-# 有手就会，Mac上微信聊天记录导出指南
 Windows系统下要实现这件事很容易，已经有开源的非常好用的工具**MemoTrace**了，传送门在这里：[github](https://github.com/LC044/WeChatMsg)，和[主页](https://memotrace.cn)。
 
 其实 MacOS上 的微信是提供聊天数据迁移的，但是！事实上，我们作为个人用户，想要把聊天记录导出成其他形式（简单可读的 txt 比如说），放在其他地方，原始 app 是做不到这一点的。那就更不用提需要把聊天记录提取出来再做一些数据分析或者自己的小工具之类的了。
 
 看到MemoTrace作者大大的下面这段话非常感动🥹
-![Memotrace 主页截图](/assets/images/memotrace_cn.png)
-
+<img src="/assets/images/memotrace_cn.png" width="50%" alt="Memotrace 主页截图">
 数据是自己的，为什么不能用？
 
 于是看了许多攻略和文章，尝试了许多方案：（需要教程的直接可以跳到，以下是探索的步骤，有点废话，但是解释了为什么最终选择这个方案）
@@ -61,7 +59,7 @@ csrutil disable
 ## 找到破解密码
 
 1. 打开Mac上的微信，但不要登录。可以对照着下面这个图来执行。
-   ![执行结果](/assets/images/cmd_result_weixin_chat.png)
+   <img src="/assets/images/cmd_result_weixin_chat.png" width="100%" alt="执行结果">
 2. 打开终端，输入以下命令：
    ```shell
    sudo lldb -p $(pgrep WeChat)
@@ -113,7 +111,7 @@ csrutil disable
     [DB Browser for SQLite](https://sqlitebrowser.org/dl/)
 
     使用该软件打开形如`msg_*.db`的数据库文件，并在提示输入密码时，使用之前获取的密码。
-    ![DB Browser界面](/assets/images/db_view.png)
+    <img src="/assets/images/db_view.png" width="80%" alt="DB Browser界面">
 
     打开数据库后，你可以看到多个表格，每个表格代表一个聊天。选择`文件-导出-表到JSON`，全选所有表格，将聊天记录导出为JSON文件。
     一个简单的Python脚本示例：

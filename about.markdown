@@ -12,12 +12,12 @@ permalink: /about/
 </r-cell>
 
 <r-cell order="-9" class="menu" span=2 span-s=2>
-  <div class='focus0'>
+  <div class='sidebar'>
     <a href="/">&#x25CF;</a>
     <a href="/about/">About</a>
     <a href="/project/">Projects</a>
     <a href="/blog/">Blogs</a>
-</div>
+  </div>
 </r-cell>
 
 <r-cell span=3 span-s=2 span-xs=row class="intro">

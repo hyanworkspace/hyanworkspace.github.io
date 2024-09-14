@@ -12,10 +12,10 @@ color_: home
 
 <r-cell order="-9" class="menu" span=2 span-s=2>
     <div class='focus0'>
-    <a href="/">&#x25CF;</a>
-    <a href="/about/">About</a>
-    <a href="/project/">Projects</a>
-    <a href="/blog/">Blogs</a>
+      <a href="/">&#x25CF;</a>
+      <a href="/about/">About</a>
+      <a href="/project/">Projects</a>
+      <a href="/blog/">Blogs</a>
     </div>
 </r-cell>
 
