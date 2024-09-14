@@ -27,7 +27,7 @@ Hey, this is H.Yan. <br>
 <br>
 Researcher, Engineer, Quant, a curious human being<br>
 <br>
-based in Shanghai, educated in Paris<br>
+based in Shanghai, educated in France<br>
 </p>
 
 <p>I find it very hard to describe what kind of topics I'm interested in, but I'm always looking for new ideas and projects to work on, so feel free to reach out if you want to collaborate.<br />
