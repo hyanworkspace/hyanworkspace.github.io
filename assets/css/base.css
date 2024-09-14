@@ -2727,17 +2727,3 @@ r-grid.main.simple h1 {
     font-size: 0.9em; /* 更小的字体 */
     color: #333; /* 深灰色文字 */
 }
-
-.main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.content {
-    flex: 1;
-}
-
-.menu {
-    width: 200px; /* 调整菜单宽度 */
-    margin-left: 20px; /* 与内容的间距 */
-}
