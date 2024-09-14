@@ -5,7 +5,6 @@ title: Blog
 permalink: /blog/
 ---
 
-
 <r-grid class="main" columns=6 columns-s=4 columns-xs=2>
 
 <r-cell order="-10" span=4 span-s=2>
@@ -13,7 +12,7 @@ permalink: /blog/
 </r-cell>
 
 <r-cell order="-9" class="menu" span=2 span-s=2>
-  <div class='focus4'>
+  <div class='focus0'>
     <a href="/">&#x25CF;</a>
     <a href="/about/">About</a>
     <a href="/project/">Projects</a>

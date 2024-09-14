@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "本地优先（Local-first）软件"
+title:  "有手就会，Mac上微信聊天记录导出指南"
 date:   2024-09-14
 # categories: [分类1, 分类2]
 tags: ["AI", "local_first", "dev"]

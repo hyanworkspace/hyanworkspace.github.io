@@ -46,7 +46,7 @@ color_: home
 <h3><a href="/blog/" class="dimmed">See all blog posts &rarr;</a></h3>
 </r-cell>
 
-
+<!-- 
 <r-cell class="intro" order-s="-2" order-xs="-2" span=2 span-s=3 span-xs=row>
     <div class="intro-content">
         <p>
@@ -59,6 +59,6 @@ color_: home
         educated in France<br>
         </p>
     </div>
-</r-cell>
+</r-cell> -->
 
 </r-grid>
