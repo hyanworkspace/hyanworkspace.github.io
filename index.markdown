@@ -24,7 +24,7 @@ color_: home
 <h2 class="margin-b-4"><a href="/project/">Projects</a></h2>
 
 <h3><a href="/vitiv/">VITIV</a></h3>
-<p>A Python-Flask based web application for a human-machine interaction based on video, image and text.
+<p>解构视觉感知的界限：在视觉、智能与现实的交界处探索
 </p>
 
 <h3><a href="/project/" class="dimmed">See all projects &rarr;</a></h3>
