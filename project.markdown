@@ -23,7 +23,7 @@ permalink: /project/
 <!-- grid -->
 <r-cell class="project" span=4>
   <h3><a href="/projects/vitiv/">VITIV</a></h3>
-  <p></p>
+  <p>解构视觉感知的界限：在视觉、智能与现实的交界处探索</p>
 </r-cell>
 
 </r-grid>
