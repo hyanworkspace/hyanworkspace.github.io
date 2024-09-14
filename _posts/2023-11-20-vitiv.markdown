@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "VITIV"
 date: 2023-11-20
 is_project: true

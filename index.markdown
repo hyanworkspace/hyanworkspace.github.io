@@ -23,7 +23,7 @@ color_: home
 <r-cell span=4>
 <h2 class="margin-b-4"><a href="/project/">Projects</a></h2>
 
-<h3><a href="/vitiv/">VITIV</a></h3>
+<h3><a href="/projects/vitiv/">VITIV</a></h3>
 <p>解构视觉感知的界限：在视觉、智能与现实的交界处探索
 </p>
 

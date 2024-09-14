@@ -23,7 +23,7 @@ permalink: /blog/
 
 <!-- 在这里添加博客文章列表 -->
 <!-- <r-grid columns=6 columns-s=4 columns-xs=2> -->
-<r-cell span=2>
+<r-cell span=4>
   <h3>Blog posts</h3>
   <ul>
     {% for post in site.posts %}
