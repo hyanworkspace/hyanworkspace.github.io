@@ -35,11 +35,13 @@ color_: home
 
 <ul>
   {% for post in site.posts limit:3 %}
+    {% unless post.is_project %}
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p>{{ post.date | date: "%Y-%m-%d" }}</p>
       <!-- <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p> -->
     </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 

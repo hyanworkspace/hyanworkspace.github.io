@@ -26,11 +26,13 @@ permalink: /blog/
 <r-cell span=2>
   <h3>Blog posts</h3>
   <ul>
-    {% for post in site.categories.blog %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        - {{ post.date | date: "%Y-%m-%d" }}
-      </li>
+    {% for post in site.posts %}
+      {% unless post.is_project %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          - {{ post.date | date: "%Y-%m-%d" }}
+        </li>
+      {% endunless %}
     {% endfor %}
 
   </ul>

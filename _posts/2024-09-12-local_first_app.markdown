@@ -2,7 +2,8 @@
 layout: post
 title:  "本地优先（Local-first）软件"
 date:   2024-09-12
-# categories: [分类1, 分类2]
+is_project: false
+categories: blogs
 # tags: [标签1, 标签2]
 ---
 早上突然从某个技术群里看到分享Local-First Conf中 Maggie Appleton 的演讲[《家酿软件与赤脚程序员》](https://www.bilibili.com/video/BV1en4y1f7EK/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=6e41768333e70f9eae0b9e514dc3bdbc)。
