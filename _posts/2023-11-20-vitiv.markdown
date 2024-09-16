@@ -145,7 +145,7 @@ First, we hope to integrate more advanced AI models, explore more complex intera
 VITIV is our rapid exploration and reflection on the AI era. It is not just a technological product or work of art, but a mirror, reflecting our various questions about vision, intelligence, reality, and human nature.
 
 
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', function() {
   var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
   var tocList = document.getElementById('toc_list');
@@ -166,4 +166,4 @@ document.addEventListener('DOMContentLoaded', function() {
     tocList.appendChild(li);
   });
 });
-</script>
+</script> -->
