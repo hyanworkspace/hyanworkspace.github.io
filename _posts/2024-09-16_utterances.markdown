@@ -4,7 +4,6 @@ title:  "用utterances为githubs pages加一个评论区"
 date:   2024-09-16
 is_project: false
 categories: blogs
-tags: ['blog-building']
 ---
 
 utterances 是一款基于 GitHub issues 的评论工具。相比同类的工具 gitment、gitalk 以及 disqus 评论工具，优点如下：
