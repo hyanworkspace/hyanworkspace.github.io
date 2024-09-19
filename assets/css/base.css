@@ -51,7 +51,7 @@
     --sunset-pink: #ff7b81;
     --kiki:#9489ac;
     --light-pink: #ffb3ba;
-    --xlight-pink:#ffd1d9
+    --xlight-pink:#ffd1d9;
 }
 
 @supports (color: color(display-p3 1 1 1)) {
@@ -2349,13 +2349,13 @@ r-grid.main.simple h1 {
 :root.blog {
     --menu-inactive-color: #fff;
     --box-link-hover-color: #fff;
-    --background-color: #e3eff4;
+    --background-color: #d4e2ff;
     --accent-color:#004287
 }
 
 @supports (color: color(display-p3 1 1 1)) {
     :root.blog {
-        --background-color: color(display-p3 0.482 0.623 0.784);
+        --background-color: #d4e2ff;
         --accent-color:color(display-p3 0 0.346 0.47)
     }
 }

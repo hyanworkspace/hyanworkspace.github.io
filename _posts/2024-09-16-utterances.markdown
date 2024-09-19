@@ -20,7 +20,7 @@ disqus配置也比较简单，也是免费的。但是，广告多，而且加�
 utterances 的安装相当简单，因为出品了一个 Github App。[这里](https://github.com/apps/utterances) 可以抵达安装页面。
 
 首先安装这个 App ，选择要关联评论的仓库。
-![utterances安装步骤1](/assets/images/utterances_github_1.png)
+<img src="/assets/images/utterances_github_1.png" width="50%" alt="utterances安装">
 
 ### 2. 使用
 
