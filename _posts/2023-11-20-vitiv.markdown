@@ -14,8 +14,10 @@ permalink: /projects/vitiv/
 
 # 解构视觉感知的界限：在视觉、智能与现实的交界处探索
 
-![VITIV](/assets/images/vitiv-poster-.svg)
-Try it out here: https://vitiv.vercel.app
+<div style="text-align: center;">
+    <img src="/assets/images/vitiv-poster-.svg" style="width: 30%;" alt="VITIV" />
+</div>
+Try it out here: [vitiv.vercel.app](https://vitiv.vercel.app)
 
 VITIV 是与cecilia（https://ceciliahua.com）的一个合作项⽬，它不仅仅是一个尝试将技术和艺术创作相融合的作品，更是为了反射出我们对视觉、智能和现实本质的种种疑问。在这个快速发展的人工智能时代，我们想要让 VITIV 为我们提供一个独特的视角，去审视我们与技术、与世界的关系。
 
