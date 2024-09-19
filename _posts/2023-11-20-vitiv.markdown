@@ -14,12 +14,12 @@ permalink: /projects/vitiv/
 
 # 解构视觉感知的界限：在视觉、智能与现实的交界处探索
 
-<div style="text-align: center;">
-    <img src="/assets/images/vitiv-poster-.svg" style="width: 30%;" alt="VITIV" />
+<div style="text-align: center; margin: 0 auto;">
+    <img src="/assets/images/vitiv-poster-.svg" style="width: 30%; display: block; margin: 0 auto;" alt="VITIV" />
 </div>
 Try it out here: [vitiv.vercel.app](https://vitiv.vercel.app)
 
-VITIV 是与cecilia（https://ceciliahua.com）的一个合作项⽬，它不仅仅是一个尝试将技术和艺术创作相融合的作品，更是为了反射出我们对视觉、智能和现实本质的种种疑问。在这个快速发展的人工智能时代，我们想要让 VITIV 为我们提供一个独特的视角，去审视我们与技术、与世界的关系。
+VITIV 是与[cecilia](https://ceciliahua.com)的一个合作项⽬，它不仅仅是一个尝试将技术和艺术创作相融合的作品，更是为了反射出我们对视觉、智能和现实本质的种种疑问。在这个快速发展的人工智能时代，我们想要让 VITIV 为我们提供一个独特的视角，去审视我们与技术、与世界的关系。
 
 ## 项目的诞生
 VITIV 的诞生起源于一次中国美术学院网络社会研究所发起的[AIathon艺能松](https://www.caa-ins.org/archives/11595)，一个简易的⽹⻚应⽤程序(web app)。两名共创者的背景完全不同，当时我们可能都没有意识到这个想法会发展成什么样子。但回过头来看，在这个视觉信息爆炸、人工智能迅速发展的时代，VITIV的出现是由于我们都在寻找一种方式，去理解和表达人类与机器如何共同"看"这个世界。
