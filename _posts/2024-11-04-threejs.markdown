@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "three.js零基础入门（坑)整理：nodejs"
+date:   2024-11-04
+is_project: false
+categories: blogs
+---
+最近跟美术学院的小伙伴聊出了个项目，其实很简单，就是可视化一些特殊场景。设计专业的孩子做出来的东西确实很有趣，总是能让人从其他角度发现熟悉事物的另一面。想从最轻量级的交付模式开始，选择搭建一个可以实现 3D 体验 web app。综合了身边小伙伴的意见，对比了 babylon.js 和 three.js，决定入坑（门）three.js！
+
+本来对 WebGL 和 Node.js 一无所知，以为跟 python flask 的框架开发差不多，直接就开始用Cursor手搓，结果就是各种报错。后来去 github 上找做好的简易项目，一步一个坑地开始了开发。还是各种报错，并且问 cursor 也无果。瞎忙活一天之后决定停一下，各种搜索教程后，发现确实没有一个真正的从 0 开始（数学家友好😂）的教程。这里记录一下需要学习的知识模块：
+
+* node.js 基础：npm，build tools，项目框架
+* three.js 基础：涉及到一些基本概念，例如场景，渲染方法（加上 camera、调整参数、光源、材质，等等）。
+* blender？这部分应该需要跟美院和项目方小伙伴讨论
+* 着色器（shader）
+* 网站优化，与 React 联动
+
+总之，目标是创建很酷的 3D 网站！
+
+## 配置
+
+### 1. 本地服务器和构建工具
+
+为了运行/测试这个网站，需要运行一个本地服务器。出于安全原因，浏览器一般会限制直接双击打开 html 文件的方式打开的网站的功能。因此，我们可能无法加载Three.js、模型、纹理等。这个问题最简单的解决方案是使用 “build tool” 或 “bundler”。
+
+#### 1.1 Vite
+
+现在有很多构建工具可用，各有利弊，我选择的构建工具是 Vite （法语中“快速”的意思😄，发音类似于“veet”）。安装和运行都很快，并且不易出错。因此，Vite 将整合所有编写好的 HTML/CSS/JS 等 Web 代码，并且构建最终的网站。当然，它还可以做很多事情，比如优化、缓存中断、源映射、运行本地服务器等。虽然 Vite 处理最基本的需求，但我们也可以添加插件来处理更多功能，例如外来语言或特殊文件。实际上，我们将在课程后面添加插件，这些插件将能够处理 GLSL 文件以创建自定义着色器，还可以运行 React。
+
+#### 1.2 Node.js
+
+为了运行 Vite，需要安装node.js。 直接去网站下载安装（简易LTS版本）即可。一常用些指令：
+
+`node -v`：可以检查安装版本
+
+然后就可以创建项目了。
+
+#### 1.3 npm
+
+安装 Node.js 时，我们会自动安装 NPM。[NPM](http://npmjs.com/) 代表 Node Package Manager，管理依赖项，一般用它获取项目需要的包，例如 Three.js、Vite 以及我们将在课程中使用的各种库。此外，NPM 带有一个名为 `npm` 的终端命令行界面。
+
+`npm init -y` 就会创建一个 `package.json` 文件，记录所有依赖包。
+
+`npm install vite`就可以将 Vite 添加到当前的 node.js 项目。
+
+然后会出现 `node_modules/` 文件夹，里面会包含所有的依赖文件，放着别动就行。例如 `vite/` 子文件夹就包含了所有 vite 组件需要的文件。
+
+`package.json` 与 `package-lock.json` 的差别就在于，前者记录的依赖包版本可以有一定程度的容差（比如需要高于 1.2.3 版本，因此 1.2.3以上的包都是可以的）而后者记录的则是项目已安装的确切版本。
+
+这两个文件就记录了需要的运行环境，使得项目可以被分享。对于他人分享的项目，直接运行：`npm install` 就可以无痛获得需要的运行/开发环境。
+
+接下来，修改 `package.json` 中，将 `scripts` 部分替换为以下内容：
+
+```json
+{
+  // ...
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  // ...
+}
+```
+
+使得运行 `npm run dev` 指令，实际上将触发的是 `vite` 。
+
+### 2. 项目结构
+
+* index.html （一个最简单的例子）
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>03 - First Three.js Project</title>
+  </head>
+  <body>
+      <h1>Soon to be a Three.js website</h1>
+      <script type="module" src="./script.js"></script>
+  </body>
+  </html>
+  ```
+* script.js（同样地，一个最简单的例子）
+
+  ```js
+  console.log('JavaScript is working')
+  ```
+* node_modules/ （所有 dependency）
+
+
+# 参考资料
+
+* [utterances](https://utteranc.es/)
+* [utterances-github-pages](https://github.com/apps/utterances)
