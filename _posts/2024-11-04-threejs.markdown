@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "three.js零基础入门（坑)整理：nodejs"
+title:  "three.js零基础入门（坑）整理（一）：nodejs基础"
 date:   2024-11-04
 is_project: false
 categories: blogs
 ---
+# three.js零基础入门（坑）整理（一）：nodejs基础
+
 最近跟美术学院的小伙伴聊出了个项目，其实很简单，就是可视化一些特殊场景。设计专业的孩子做出来的东西确实很有趣，总是能让人从其他角度发现熟悉事物的另一面。想从最轻量级的交付模式开始，选择搭建一个可以实现 3D 体验 web app。综合了身边小伙伴的意见，对比了 babylon.js 和 three.js，决定入坑（门）three.js！
 
 本来对 WebGL 和 Node.js 一无所知，以为跟 python flask 的框架开发差不多，直接就开始用Cursor手搓，结果就是各种报错。后来去 github 上找做好的简易项目，一步一个坑地开始了开发。还是各种报错，并且问 cursor 也无果。瞎忙活一天之后决定停一下，各种搜索教程后，发现确实没有一个真正的从 0 开始（数学家友好😂）的教程。这里记录一下需要学习的知识模块：
@@ -89,8 +91,7 @@ categories: blogs
   ```
 * node_modules/ （所有 dependency）
 
+## 参考资料
 
-# 参考资料
-
-* [utterances](https://utteranc.es/)
-* [utterances-github-pages](https://github.com/apps/utterances)
+* [官方 documentation](https://threejs.org/)
+* 一个非常实用，drag-and-drop 可视化 gltf 文件的小站，学习了许多代码构建：[gltf-viewer](https://gltf-viewer.donmccurdy.com)
