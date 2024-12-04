@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "WebArt 3.0 (Cursor部分)"
-date:   2024-12-05
+date:   2024-12-04
 is_project: false
 categories: blogs
 ---
-
 # Cursor
 <img src="/assets/images/cursor_snapshot.png" width="100%" alt="cursor选项">
 
